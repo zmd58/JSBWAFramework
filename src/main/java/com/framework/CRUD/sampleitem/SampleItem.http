@@ -1,0 +1,32 @@
+### Find All Items
+GET http://localhost:8080/api
+
+### Find Item By ID
+GET http://localhost:8080/api/4
+
+### Create New Item
+POST http://localhost:8080/api
+Content-Type: application/json
+
+{
+  "id": "4",
+  "name": "Item 4",
+  "description": "Item 4 Description",
+  "price": "35",
+  "sampleType": "TypeB"
+}
+
+### Upddate Item
+PUT http://localhost:8080/api/4
+Content-Type: application/json
+
+{
+  "id": "4",
+  "name": "Item 4",
+  "description": "Item 4 Description",
+  "price": "55",
+  "sampleType": "TypeB"
+}
+
+### Delete Item
+DELETE http://localhost:8080/api/4
