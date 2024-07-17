@@ -2,7 +2,10 @@
 GET http://localhost:8080/api
 
 ### Find Item By ID
-GET http://localhost:8080/api/4
+GET http://localhost:8080/api/1
+
+### Find Item By ID that doesn't exist
+GET http://localhost:8080/api/99
 
 ### Create New Item
 POST http://localhost:8080/api
