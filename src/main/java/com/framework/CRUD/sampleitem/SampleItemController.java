@@ -11,22 +11,22 @@ import java.util.Optional;
 @RequestMapping("/api")
 public class SampleItemController {
 
-    private final SampleItemRepository sampleItemRepository;
+    private final SampleItemIRepository sampleItemIRepository;
 
-    public SampleItemController(SampleItemRepository sampleItemRepository) {
-        this.sampleItemRepository = sampleItemRepository;
+    public SampleItemController(SampleItemIRepository sampleItemIRepository) {
+        this.sampleItemIRepository = sampleItemIRepository;
     }
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping()
     List<SampleItem> getAllItems() {
-        return sampleItemRepository.findAll();
+        return sampleItemIRepository.findAll();
     }
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/{id}")
     SampleItem getItemById(@PathVariable int id) {
-        Optional<SampleItem> item = sampleItemRepository.findById(id);
+        Optional<SampleItem> item = sampleItemIRepository.findById(id);
         if (item.isEmpty()) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
@@ -36,19 +36,19 @@ public class SampleItemController {
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping()
     void createItem(@RequestBody SampleItem sampleItem) {
-        sampleItemRepository.create(sampleItem);
+        sampleItemIRepository.create(sampleItem);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @PutMapping("/{id}")
     void updateItem(@RequestBody SampleItem sampleItem, @PathVariable int id) {
-        sampleItemRepository.update(sampleItem, id);
+        sampleItemIRepository.update(sampleItem, id);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("/{id}")
     void deleteById(@PathVariable int id) {
-        sampleItemRepository.delete(id);
+        sampleItemIRepository.delete(id);
     }
 
 }
