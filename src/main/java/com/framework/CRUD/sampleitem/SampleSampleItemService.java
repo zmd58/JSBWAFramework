@@ -1,6 +1,5 @@
 package com.framework.CRUD.sampleitem;
 
-<<<<<<< HEAD
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class SampleItemRepository implements SampleItemIRepository {
+public class SampleSampleItemService implements SampleItemRepository {
     List<SampleItem> sampleItems = new ArrayList<>();
 
     @Override
@@ -45,19 +44,4 @@ public class SampleItemRepository implements SampleItemIRepository {
         sampleItems.add(new SampleItem(2, "Item 2", "Item 2 Description", BigDecimal.valueOf(1000), SampleType.TypeB));
         sampleItems.add(new SampleItem(3, "Item 3", "Item 1 Description", BigDecimal.valueOf(10000), SampleType.TypeC));
     }
-=======
-import org.springframework.stereotype.Repository;
-
-import java.util.List;
-import java.util.Optional;
-
-@Repository
-public interface SampleItemRepository {
-    List<SampleItem> findAll();
-    Optional<SampleItem> findById(int id);
-    void create(SampleItem sampleItem);
-    void update(SampleItem sampleItem, int id);
-    void delete(int id);
-
->>>>>>> 138388e (added .http file)
 }
