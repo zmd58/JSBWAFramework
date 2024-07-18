@@ -1,4 +1,4 @@
-package com.framework.CRUD.sampleitem;
+package com.framework.CRUD.samplebasic;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
@@ -8,11 +8,11 @@ import java.math.BigDecimal;
 public record SampleItem(
         int id,
         @NotNull
-        String name,
+        String title,
         String description,
         @Positive
         BigDecimal price,
-        SampleType sampleType
+        Category category
 ) {
 
 }

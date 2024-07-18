@@ -1,4 +1,4 @@
-package com.framework.CRUD.sampleitem;
+package com.framework.CRUD.samplebasic;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -42,9 +42,9 @@ public class SampleItemRepository implements SampleItemIRepository {
 
     @PostConstruct
     private void init() {
-        sampleItems.add(new SampleItem(1, "Item 1", "Item 1 Description", BigDecimal.valueOf(100), SampleType.TypeA));
-        sampleItems.add(new SampleItem(2, "Item 2", "Item 2 Description", BigDecimal.valueOf(1000), SampleType.TypeB));
-        sampleItems.add(new SampleItem(3, "Item 3", "Item 1 Description", BigDecimal.valueOf(10000), SampleType.TypeC));
+        sampleItems.add(new SampleItem(1, "Item 1", "Item 1 Description", BigDecimal.valueOf(100), Category.A));
+        sampleItems.add(new SampleItem(2, "Item 2", "Item 2 Description", BigDecimal.valueOf(1000), Category.B));
+        sampleItems.add(new SampleItem(3, "Item 3", "Item 1 Description", BigDecimal.valueOf(10000), Category.C));
     }
 =======
 import org.springframework.stereotype.Repository;

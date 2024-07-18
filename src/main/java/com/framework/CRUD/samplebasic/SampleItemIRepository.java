@@ -1,4 +1,4 @@
-package com.framework.CRUD.sampleitem;
+package com.framework.CRUD.samplebasic;
 
 import org.springframework.stereotype.Repository;
 

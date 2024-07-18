@@ -13,10 +13,10 @@ Content-Type: application/json
 
 {
   "id": "4",
-  "name": "Item 4",
+  "title": "Item 4",
   "description": "Item 4 Description",
   "price": "35",
-  "sampleType": "TypeB"
+  "category": "B"
 }
 
 ### Upddate Item
@@ -25,10 +25,10 @@ Content-Type: application/json
 
 {
   "id": "4",
-  "name": "Item 4",
+  "title": "Item 4",
   "description": "Item 4 Description",
   "price": "55",
-  "sampleType": "TypeB"
+  "category": "B"
 }
 
 ### Delete Item

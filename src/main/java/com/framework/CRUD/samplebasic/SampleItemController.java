@@ -1,4 +1,4 @@
-package com.framework.CRUD.sampleitem;
+package com.framework.CRUD.samplebasic;
 
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
