@@ -1,35 +1,35 @@
-### Find All Items
-GET http://localhost:8080/api
-
-### Find Item By ID
-GET http://localhost:8080/api/1
-
-### Find Item By ID that doesn't exist
-GET http://localhost:8080/api/99
-
-### Create New Item
-POST http://localhost:8080/api
-Content-Type: application/json
-
-{
-  "id": "4",
-  "title": "Item 4",
-  "description": "Item 4 Description",
-  "price": "35",
-  "category": "B"
-}
-
-### Upddate Item
-PUT http://localhost:8080/api/4
-Content-Type: application/json
-
-{
-  "id": "4",
-  "title": "Item 4",
-  "description": "Item 4 Description",
-  "price": "55",
-  "category": "B"
-}
-
-### Delete Item
-DELETE http://localhost:8080/api/4
+#### Find All Items
+#GET http://localhost:8080/api
+#
+#### Find Item By ID
+#GET http://localhost:8080/api/1
+#
+#### Find Item By ID that doesn't exist
+#GET http://localhost:8080/api/99
+#
+#### Create New Item
+#POST http://localhost:8080/api
+#Content-Type: application/json
+#
+#{
+#  "id": "4",
+#  "title": "Item 4",
+#  "description": "Item 4 Description",
+#  "price": "35",
+#  "category": "B"
+#}
+#
+#### Upddate Item
+#PUT http://localhost:8080/api/4
+#Content-Type: application/json
+#
+#{
+#  "id": "4",
+#  "title": "Item 4",
+#  "description": "Item 4 Description",
+#  "price": "55",
+#  "category": "B"
+#}
+#
+#### Delete Item
+#DELETE http://localhost:8080/api/4

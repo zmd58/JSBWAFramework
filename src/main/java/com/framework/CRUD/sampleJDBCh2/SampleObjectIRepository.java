@@ -1,12 +1,18 @@
 package com.framework.CRUD.sampleJDBCh2;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public interface SampleObjectIRepository {
     List<SampleObject> findAll();
-    Optional<SampleObject> findById(int id);
+    Optional<SampleObject> findById(Integer id);
     void create(SampleObject sampleObject);
-    void update(SampleObject sampleObject, int id);
-    void delete(int id);
+    void update(SampleObject sampleObject, Integer id);
+    void delete(Integer id);
+    int count();
+    void saveAll(List<SampleObject> sampleObjectList);
+    List<SampleObject> findByOption(Option option);
 }
