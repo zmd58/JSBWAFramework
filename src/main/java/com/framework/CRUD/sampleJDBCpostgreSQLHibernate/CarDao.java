@@ -1,8 +1,11 @@
 package com.framework.CRUD.sampleJDBCpostgreSQLHibernate;
 
+import org.springframework.stereotype.Component;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
+@Component
 public class CarDao implements Dao<Car> {
     private List<Car> carList = new ArrayList<>();
 

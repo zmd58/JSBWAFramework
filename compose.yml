@@ -1,0 +1,9 @@
+  services:
+    postgres:
+      image: 'postgres:latest' ### specify postgres image version
+      environment:
+        - 'POSTGRES_DB=sample'
+        - 'POSTGRES_PASSWORD=admin'
+        - 'POSTGRES_USER=admin'
+      ports:
+        - '5432:5432' ### specify which port 5432 match to 5432 on local machine

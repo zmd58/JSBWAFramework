@@ -5,6 +5,11 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ *
+ * Repository interface to perform SOLID - I aka Interface segregation
+ *
+ */
 @Repository
 public interface SampleObjectIRepository {
     List<SampleObject> findAll();

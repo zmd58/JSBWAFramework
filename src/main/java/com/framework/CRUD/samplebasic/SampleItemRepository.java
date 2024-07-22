@@ -2,12 +2,14 @@
 //
 //import jakarta.annotation.PostConstruct;
 //import org.springframework.stereotype.Service;
+//import org.springframework.stereotype.Component;
 //
 //import java.math.BigDecimal;
 //import java.util.ArrayList;
 //import java.util.List;
 //import java.util.Optional;
 //
+//@Component
 //public class SampleItemRepository implements SampleItemIRepository {
 //    List<SampleItem> sampleItems = new ArrayList<>();
 //
