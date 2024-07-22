@@ -1,13 +1,23 @@
 package com.framework.CRUD.sampleJDBCh2;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.simple.JdbcClient;
+import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
 import java.util.List;
 import java.util.Optional;
 
+/**
+ *
+ * Actual business logic of the repository
+ * AKA coding with an interface
+ *
+ */
+@Component
 public class SampleObjectRepository implements SampleObjectIRepository {
-//    private static final Logger log = LoggerFactory.getLogger(SampleObjectRepository.class);
+    private static final Logger log = LoggerFactory.getLogger(SampleObjectRepository.class);
     private final JdbcClient jdbcClient;
 
     public SampleObjectRepository(JdbcClient jdbcClient) {

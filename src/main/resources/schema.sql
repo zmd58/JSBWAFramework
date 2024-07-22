@@ -3,6 +3,6 @@ CREATE TABLE IF NOT EXISTS Objects (
     title varchar(250) NOT NULL,
     description varchar(250),
     price DECIMAL NOT NULL,
-    category varchar(250),
+    option varchar(250),
     PRIMARY KEY (id)
 );
