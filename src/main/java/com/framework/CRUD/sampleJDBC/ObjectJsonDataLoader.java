@@ -1,4 +1,4 @@
-package com.framework.CRUD.sampleJDBCh2;
+package com.framework.CRUD.sampleJDBC;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;

@@ -1,4 +1,4 @@
-package com.framework.CRUD.sampleJDBCh2;
+package com.framework.CRUD.sampleJDBC;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;

@@ -1,4 +1,4 @@
-package com.framework.CRUD.sampleJDBCpostgreSQLHibernate;
+package com.framework.CRUD.sampleDataJDBC;
 
 import org.springframework.stereotype.Component;
 
